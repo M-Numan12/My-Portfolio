@@ -60,6 +60,18 @@ export default function Projects() {
         "Reduces student waiting times and enhances transit safety through precise live GPS coordinates.",
         "Implemented secure background services for persistent location coordinates streaming."
       ]
+    },
+    {
+      title: "NOVA AI - Voice Desktop Assistant",
+      icon: "pi pi-microphone",
+      technologies: ["Python", "Selenium", "Playwright", "Speech Recognition", "PyAutoGUI", "SQLite"],
+      link: "https://github.com/M-Numan12",
+      details: [
+        "Developed a Python-based voice-controlled desktop automation assistant.",
+        "Implemented speech recognition and voice response for hands-free system interaction.",
+        "Automated desktop tasks (app launching, file management) and browser navigation.",
+        "Designed modular architecture with system startup integration."
+      ]
     }
   ];
 
