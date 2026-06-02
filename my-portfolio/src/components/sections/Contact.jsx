@@ -45,8 +45,8 @@ export default function Contact() {
     {
       icon: "pi pi-map-marker",
       label: "Address",
-      value: "Lahore, Pakistan",
-      link: "https://maps.google.com/?q=Lahore,Pakistan"
+      value: "Al-Jalil Garden, Sharaqpur Road, Lahore",
+      link: "https://maps.google.com/?q=Al-Jalil+Garden,+Sharaqpur+Road,+Lahore"
     },
     {
       icon: "pi pi-linkedin",

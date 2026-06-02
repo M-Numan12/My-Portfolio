@@ -2,12 +2,12 @@ import { motion } from "framer-motion";
 
 export default function TechStack() {
   const skills = [
-    { name: "React.js", percentage: 90 },
-    { name: "Node.js & Express.js", percentage: 85 },
-    { name: "PostgreSQL & Sequelize", percentage: 80 },
-    { name: "MongoDB & Database Modeling", percentage: 75 },
-    { name: "JavaScript (ES6+) & Python", percentage: 85 },
-    { name: "HTML5, CSS3 & SASS/SCSS", percentage: 95 },
+    { name: "React.js & Next.js (MERN/SaaS)", percentage: 90 },
+    { name: "Node.js & Express.js (REST/WebSockets)", percentage: 85 },
+    { name: "PostgreSQL, MySQL & MongoDB", percentage: 80 },
+    { name: "JavaScript (ES6+) & Python Automation", percentage: 85 },
+    { name: "HTML5, CSS3, Tailwind CSS & SASS", percentage: 95 },
+    { name: "AI Integration (OpenAI API) & Docker", percentage: 75 },
   ];
 
   return (

@@ -72,6 +72,18 @@ export default function Projects() {
         "Automated desktop tasks (app launching, file management) and browser navigation.",
         "Designed modular architecture with system startup integration."
       ]
+    },
+    {
+      title: "AI Trade Journal (SaaS Platform)",
+      icon: "pi pi-chart-bar",
+      technologies: ["Next.js", "Node.js", "PostgreSQL", "OpenAI API", "Socket.io", "Docker"],
+      link: "https://github.com/M-Numan12/AI-Trade-Journal",
+      details: [
+        "Developed a full-stack SaaS trading journal with AI-powered trade analysis and feedback.",
+        "Implemented screenshot uploads and chart analysis using OpenAI vision capabilities.",
+        "Designed interactive dashboards tracking win rate, risk-reward, and emotional psychology.",
+        "Built secure JWT authentication, real-time WebSocket notifications, and optimized PostgreSQL schema."
+      ]
     }
   ];
 

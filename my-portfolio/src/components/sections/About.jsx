@@ -6,7 +6,7 @@ export default function About() {
     { label: "Birthday", value: "June 12, 2003" },
     { label: "Phone", value: "+92-3259773687" },
     { label: "Email", value: "Numannaeem134@gmail.com" },
-    { label: "Address", value: "Lahore, Pakistan" },
+    { label: "Address", value: "Al-Jalil Garden, Sharaqpur Road, Lahore" },
     { label: "Language", value: "English, Urdu, Punjabi" },
     { label: "Freelance", value: "Available" },
   ];

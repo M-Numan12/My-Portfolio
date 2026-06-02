@@ -3,54 +3,35 @@ import { motion } from "framer-motion";
 export default function Resume() {
   const education = [
     {
-      year: "2020 - 2024",
-      title: "Bachelor of Computer Science",
-      institution: "Punjab University (PUCIT)",
+      year: "2023 - 2027",
+      title: "ADP & Post ADP in Computer Science",
+      institution: "National College of Business Administration and Economics (NCBA&E)",
       details: [
-        "Focused on Software Engineering, Database Systems, and Web Technologies.",
-        "Graduated with honors, demonstrating excellence in coding and systems design.",
-        "Created an advanced ERP as a final year capstone project."
-      ]
-    },
-    {
-      year: "2018 - 2020",
-      title: "F.Sc. Pre-Engineering",
-      institution: "KIPS College, Lahore",
-      details: [
-        "Built advanced analytical and mathematical skills in Physics, Chemistry, and Mathematics.",
-        "Maintained high academic standing and consistently excelled in logical problem-solving contests."
+        "Current CGPA: 3.1 / 4.00",
+        "Focused on computer science fundamentals, full-stack application architectures, and database modeling."
       ]
     }
   ];
 
   const experience = [
     {
+      year: "July 2024 - Dec 2025",
+      title: "Full Stack Developer (Intern)",
+      institution: "DevZone Solutions",
+      details: [
+        "Gained hands-on experience in web development and real-world client projects over two separate periods.",
+        "Collaborated with the development team on full-stack web application development and database management tasks.",
+        "Worked with modern workflows and tech stacks in a professional software development environment."
+      ]
+    },
+    {
       year: "2023 - Present",
-      title: "Lead Full-Stack Web Developer",
-      institution: "Freelance & Remote Projects",
+      title: "Freelance & Project-Based Developer",
+      institution: "Self-Employed",
       details: [
-        "Built and launched a highly successful School Management System featuring role-based dashboards for admins, teachers, and parents.",
-        "Engineered secure PostgreSQL schemas and custom Node.js/Express backend APIs.",
-        "Designed and customized responsive layouts using React and PrimeReact."
-      ]
-    },
-    {
-      year: "2024 (Project-Based)",
-      title: "ERP System Architect",
-      institution: "Enterprise Business Solutions",
-      details: [
-        "Designed and implemented a role-based ERP solution to manage inventory, sales, and accounts for building materials businesses.",
-        "Enforced strict multi-tenant role isolation to secure business data.",
-        "Developed custom reporting and analytics charts using chart libraries."
-      ]
-    },
-    {
-      year: "2023 (Project-Based)",
-      title: "Web Developer",
-      institution: "PrimePrep Portal",
-      details: [
-        "Created a real-time exam preparation platform containing live countdown quizzes.",
-        "Integrated detailed dashboard metrics displaying student performance analytics."
+        "Developed full-stack web solutions (ERP Systems, School Management Systems) and automation scripts.",
+        "Engineered real-time features using WebSockets and automated workflows using Python.",
+        "Integrated AI vision capabilities and trading analysis systems into SaaS platforms."
       ]
     }
   ];
