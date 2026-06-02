@@ -57,8 +57,8 @@ export default function Contact() {
     {
       icon: "pi pi-github",
       label: "GitHub",
-      value: "Numan5566",
-      link: "https://github.com/Numan5566"
+      value: "M-Numan12",
+      link: "https://github.com/M-Numan12"
     }
   ];
 

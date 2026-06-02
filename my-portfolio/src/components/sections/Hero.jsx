@@ -57,7 +57,7 @@ export default function Hero() {
         <motion.div className="social-container" variants={itemVariants}>
           <span>Connect:</span>
           <div className="social-links">
-            <a href="https://github.com/Numan5566" target="_blank" rel="noopener noreferrer" title="GitHub">
+            <a href="https://github.com/M-Numan12" target="_blank" rel="noopener noreferrer" title="GitHub">
               <i className="pi pi-github"></i>
             </a>
             <a href="https://www.linkedin.com/in/muhammad-numan-8656b1406/" target="_blank" rel="noopener noreferrer" title="LinkedIn">
