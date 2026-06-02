@@ -21,7 +21,7 @@ export default function Navbar() {
 
   const start = (
     <div className="logo" onClick={() => scrollToSection("home")}>
-      Numan<span>.</span>
+      M.Numan
     </div>
   );
 

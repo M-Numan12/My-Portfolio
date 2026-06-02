@@ -26,7 +26,7 @@ function App() {
 
       <footer className="footer">
         <p>
-          © {new Date().getFullYear()} <span>Numan.</span> All Rights Reserved.
+          © {new Date().getFullYear()} <span>M.Numan</span> All Rights Reserved.
         </p>
         <div className="footer-links">
           <a href="#home">Home</a>
