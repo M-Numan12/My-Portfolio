@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import AiDemos from "./AiDemos";
 
 export default function Projects() {
   const projectsList = [
@@ -161,6 +162,7 @@ export default function Projects() {
           </motion.div>
         ))}
       </div>
+      <AiDemos />
     </section>
   );
 }
