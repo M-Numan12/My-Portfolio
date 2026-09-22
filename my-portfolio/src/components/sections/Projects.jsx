@@ -3,6 +3,18 @@ import { motion } from "framer-motion";
 export default function Projects() {
   const projectsList = [
     {
+      title: "AetherMetrics — Business Analytics Dashboard",
+      icon: "pi pi-chart-bar",
+      image: "https://raw.githubusercontent.com/M-Numan12/AETHERMETRICS/main/preview.png",
+      technologies: ["JavaScript", "HTML", "CSS", "Analytics"],
+      link: "https://github.com/M-Numan12/AETHERMETRICS",
+      details: [
+        "Interactive business dashboard with period filters and transaction search.",
+        "Calculated revenue, order and conversion metrics with channel breakdown.",
+        "CSV export and responsive interface using fictional demo data."
+      ]
+    },
+    {
       title: "School Management System",
       icon: "pi pi-building",
       technologies: ["React", "Node.js", "Express", "PostgreSQL", "Sequelize"],
@@ -120,7 +132,7 @@ export default function Projects() {
             custom={index}
           >
             <div className="project-img-mock">
-              <i className={project.icon}></i>
+              {project.image ? <img src={project.image} alt={`${project.title} visual preview`} style={{width: "100%", height: "100%", objectFit: "cover", objectPosition: "top"}} loading="lazy" /> : <i className={project.icon}></i>}
               <div className="glow-overlay"></div>
               <div className="project-tags">
                 {project.technologies.map((tech, idx) => (
