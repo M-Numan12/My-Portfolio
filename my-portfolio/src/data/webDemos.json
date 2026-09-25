@@ -1,0 +1,326 @@
+[
+  {
+    "slug": "corporate-company-site",
+    "title": "Corporate Website",
+    "group": "Business Websites",
+    "input": "Company story",
+    "process": "Service exploration",
+    "result": "Contact enquiry",
+    "description": "A clear company presence with service sections and an enquiry path."
+  },
+  {
+    "slug": "service-business-site",
+    "title": "Service Business Website",
+    "group": "Business Websites",
+    "input": "Customer need",
+    "process": "Service and trust content",
+    "result": "Quote enquiry",
+    "description": "A service-led homepage for local businesses."
+  },
+  {
+    "slug": "academy-education-site",
+    "title": "Academy Website",
+    "group": "Business Websites",
+    "input": "Student interest",
+    "process": "Program discovery",
+    "result": "Admissions enquiry",
+    "description": "Course information and a simple enquiry flow."
+  },
+  {
+    "slug": "personal-brand-portfolio",
+    "title": "Personal Brand Portfolio",
+    "group": "Business Websites",
+    "input": "Visitor interest",
+    "process": "Work and skills showcase",
+    "result": "Project enquiry",
+    "description": "A focused portfolio for independent professionals."
+  },
+  {
+    "slug": "campaign-landing-page",
+    "title": "Campaign Landing Page",
+    "group": "Business Websites",
+    "input": "Campaign traffic",
+    "process": "Focused offer and proof",
+    "result": "Qualified enquiry",
+    "description": "A single-goal landing page with a measurable call to action."
+  },
+  {
+    "slug": "multilingual-location-site",
+    "title": "Multi-location Website",
+    "group": "Business Websites",
+    "input": "Preferred location",
+    "process": "Localized contact details",
+    "result": "Location-specific enquiry",
+    "description": "A multi-location concept with language and location choices."
+  },
+  {
+    "slug": "wordpress-business-concept",
+    "title": "Custom WordPress Website",
+    "group": "WordPress",
+    "input": "Business content",
+    "process": "Editable page concept",
+    "result": "Enquiry form",
+    "description": "A WordPress-ready design concept; CMS integration is a separate step."
+  },
+  {
+    "slug": "wordpress-theme-concept",
+    "title": "WordPress Theme Customizer",
+    "group": "WordPress",
+    "input": "Brand choices",
+    "process": "Theme palette preview",
+    "result": "Styled homepage",
+    "description": "A visual theme configuration prototype."
+  },
+  {
+    "slug": "gutenberg-page-concept",
+    "title": "Gutenberg / Elementor Pages",
+    "group": "WordPress",
+    "input": "Page sections",
+    "process": "Block layout preview",
+    "result": "Page concept",
+    "description": "A block-based page composition concept."
+  },
+  {
+    "slug": "wordpress-plugin-plan",
+    "title": "WordPress Plugin Setup",
+    "group": "WordPress",
+    "input": "Feature request",
+    "process": "Plugin checklist",
+    "result": "Implementation plan",
+    "description": "An interactive plan for choosing and reviewing plugin features."
+  },
+  {
+    "slug": "wordpress-migration-plan",
+    "title": "WordPress Redesign & Migration",
+    "group": "WordPress",
+    "input": "Current website",
+    "process": "Migration checklist",
+    "result": "Launch plan",
+    "description": "A content and redirect checklist for a safer redesign."
+  },
+  {
+    "slug": "wordpress-care-plan",
+    "title": "WordPress Care Dashboard",
+    "group": "WordPress",
+    "input": "Site maintenance",
+    "process": "Health checklist",
+    "result": "Care score",
+    "description": "A maintenance dashboard concept for backups, updates and security."
+  },
+  {
+    "slug": "woocommerce-store-concept",
+    "title": "WooCommerce Store Concept",
+    "group": "Commerce & Booking",
+    "input": "Product selection",
+    "process": "Cart calculation",
+    "result": "Checkout summary",
+    "description": "An interactive store and cart preview; no real orders or payment."
+  },
+  {
+    "slug": "inventory-order-demo",
+    "title": "Inventory & Orders",
+    "group": "Commerce & Booking",
+    "input": "Product quantities",
+    "process": "Cart and stock checks",
+    "result": "Order preview",
+    "description": "A browser-local inventory and order flow."
+  },
+  {
+    "slug": "payment-checkout-demo",
+    "title": "Checkout Flow",
+    "group": "Commerce & Booking",
+    "input": "Cart items",
+    "process": "Total calculation",
+    "result": "Payment handoff preview",
+    "description": "A checkout UX prototype. No payment gateway is connected."
+  },
+  {
+    "slug": "appointment-booking-demo",
+    "title": "Appointment Booking",
+    "group": "Commerce & Booking",
+    "input": "Preferred slot",
+    "process": "Availability check",
+    "result": "Booking preview",
+    "description": "A local appointment scheduler with conflict feedback."
+  },
+  {
+    "slug": "hospitality-reservation-demo",
+    "title": "Hospitality Reservations",
+    "group": "Commerce & Booking",
+    "input": "Reservation details",
+    "process": "Date and party check",
+    "result": "Reservation preview",
+    "description": "A restaurant or hotel reservation concept."
+  },
+  {
+    "slug": "quote-request-demo",
+    "title": "Quote Request Workflow",
+    "group": "Commerce & Booking",
+    "input": "Project requirements",
+    "process": "Request review",
+    "result": "Quote brief",
+    "description": "A structured service quotation form."
+  },
+  {
+    "slug": "react-next-interface",
+    "title": "React / Next Interface Concept",
+    "group": "Custom Web Apps",
+    "input": "Product requirement",
+    "process": "Interface concept",
+    "result": "User journey",
+    "description": "A responsive web app concept; this demo uses vanilla JavaScript."
+  },
+  {
+    "slug": "login-access-prototype",
+    "title": "Login & Access Prototype",
+    "group": "Custom Web Apps",
+    "input": "Access request",
+    "process": "Role selection",
+    "result": "Reviewable access plan",
+    "description": "An access planning demo; no authentication is implemented."
+  },
+  {
+    "slug": "admin-content-console",
+    "title": "Admin Content Console",
+    "group": "Custom Web Apps",
+    "input": "Content entry",
+    "process": "Validation",
+    "result": "Preview record",
+    "description": "A lightweight administrative content workflow."
+  },
+  {
+    "slug": "membership-portal-concept",
+    "title": "Membership Portal Concept",
+    "group": "Custom Web Apps",
+    "input": "Member request",
+    "process": "Plan selection",
+    "result": "Membership preview",
+    "description": "A plan and enrollment concept without billing or accounts."
+  },
+  {
+    "slug": "notification-feed-demo",
+    "title": "Notification Feed",
+    "group": "Custom Web Apps",
+    "input": "Activity event",
+    "process": "Priority grouping",
+    "result": "Notification summary",
+    "description": "A local event and notification display."
+  },
+  {
+    "slug": "api-data-mapper",
+    "title": "API Data Mapper",
+    "group": "Custom Web Apps",
+    "input": "JSON payload",
+    "process": "Field mapping",
+    "result": "Normalized record",
+    "description": "A simple browser-local JSON mapping utility."
+  },
+  {
+    "slug": "ui-ux-redesign-demo",
+    "title": "UI / UX Redesign",
+    "group": "Website Improvement",
+    "input": "Existing layout",
+    "process": "Clearer hierarchy",
+    "result": "Improved contact path",
+    "description": "A redesigned service page concept."
+  },
+  {
+    "slug": "mobile-responsive-demo",
+    "title": "Mobile Layout Preview",
+    "group": "Website Improvement",
+    "input": "Device width",
+    "process": "Responsive layout",
+    "result": "Readable mobile page",
+    "description": "A responsive sample with mobile-first navigation."
+  },
+  {
+    "slug": "performance-budget-demo",
+    "title": "Performance Budget",
+    "group": "Website Improvement",
+    "input": "Page resources",
+    "process": "Budget checklist",
+    "result": "Improvement score",
+    "description": "A review worksheet, not a live speed benchmark."
+  },
+  {
+    "slug": "seo-foundation-demo",
+    "title": "Technical SEO Foundations",
+    "group": "Website Improvement",
+    "input": "Page metadata",
+    "process": "SEO checklist",
+    "result": "Action list",
+    "description": "A practical SEO checklist, not a crawler."
+  },
+  {
+    "slug": "accessibility-review-demo",
+    "title": "Accessibility Review",
+    "group": "Website Improvement",
+    "input": "Interface checks",
+    "process": "Accessibility checklist",
+    "result": "Review score",
+    "description": "A manual WCAG-inspired review aid, not an automated audit."
+  },
+  {
+    "slug": "browser-compatibility-demo",
+    "title": "Compatibility Tracker",
+    "group": "Website Improvement",
+    "input": "Browser checks",
+    "process": "Issue checklist",
+    "result": "Fix priorities",
+    "description": "A cross-browser issue review worksheet."
+  },
+  {
+    "slug": "smart-contact-form",
+    "title": "Smart Contact Form",
+    "group": "Lead Generation",
+    "input": "Customer details",
+    "process": "Service and budget check",
+    "result": "Enquiry brief",
+    "description": "A structured enquiry flow with local validation."
+  },
+  {
+    "slug": "whatsapp-chat-entry",
+    "title": "WhatsApp Chat Entry",
+    "group": "Lead Generation",
+    "input": "Visitor question",
+    "process": "Chat entry choice",
+    "result": "Message draft",
+    "description": "A WhatsApp entry-point concept; no message is sent automatically."
+  },
+  {
+    "slug": "crm-email-pipeline",
+    "title": "CRM & Email Pipeline",
+    "group": "Lead Generation",
+    "input": "New enquiry",
+    "process": "Stage selection",
+    "result": "Next action",
+    "description": "A local lead-stage workflow without CRM connectivity."
+  },
+  {
+    "slug": "conversion-landing-test",
+    "title": "Conversion Landing Concept",
+    "group": "Lead Generation",
+    "input": "Campaign visitor",
+    "process": "Offer and benefit story",
+    "result": "Call to action",
+    "description": "A focused landing concept with a clear next step."
+  },
+  {
+    "slug": "analytics-event-demo",
+    "title": "Event Analytics",
+    "group": "Lead Generation",
+    "input": "Visitor events",
+    "process": "Event aggregation",
+    "result": "Conversion snapshot",
+    "description": "An interactive sample analytics panel; no tracking script is installed."
+  },
+  {
+    "slug": "inquiry-alert-demo",
+    "title": "Inquiry Alert Queue",
+    "group": "Lead Generation",
+    "input": "Incoming enquiry",
+    "process": "Priority grouping",
+    "result": "Alert queue",
+    "description": "A browser-local notification prototype with no outbound alerts."
+  }
+]
