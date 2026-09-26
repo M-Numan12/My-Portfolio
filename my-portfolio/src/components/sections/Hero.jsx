@@ -18,7 +18,7 @@ export default function Hero() {
           <button className="btn-secondary" onClick={() => scrollToSection("contact")}>Discuss a project</button>
         </div>
         <div className="hero-proof" aria-label="Portfolio highlights">
-          <div><strong>60+</strong><span>interactive demos</span></div>
+          <div><strong>65+</strong><span>interactive demos</span></div>
           <div><strong>Full cycle</strong><span>frontend to deployment</span></div>
           <div><strong>Remote</strong><span>worldwide collaboration</span></div>
         </div>
