@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 720">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#07111f"/><stop offset="1" stop-color="#111827"/></linearGradient>
+    <linearGradient id="line" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#22d3ee"/><stop offset="1" stop-color="#818cf8"/></linearGradient>
+  </defs>
+  <rect width="1200" height="720" fill="url(#bg)"/>
+  <rect x="0" y="0" width="220" height="720" fill="#07101c"/>
+  <circle cx="42" cy="46" r="19" fill="#2563eb"/><path d="M31 48l8-8 8 6 9-13" fill="none" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="72" y="52" fill="#f8fafc" font-family="Arial" font-size="22" font-weight="700">TradePilot</text>
+  <g fill="#8da1ba" font-family="Arial" font-size="15"><text x="28" y="126">OVERVIEW</text><text x="28" y="176">TRADE JOURNAL</text><text x="28" y="226">AI REVIEW</text><text x="28" y="276">ANALYTICS</text></g>
+  <rect x="18" y="98" width="184" height="46" rx="10" fill="#16253a"/><text x="52" y="127" fill="#f8fafc" font-family="Arial" font-size="15">Dashboard</text>
+  <text x="260" y="58" fill="#8da1ba" font-family="Arial" font-size="14">PORTFOLIO / OVERVIEW</text>
+  <text x="260" y="105" fill="#f8fafc" font-family="Arial" font-size="32" font-weight="700">Trading Performance</text>
+  <text x="260" y="136" fill="#8da1ba" font-family="Arial" font-size="15">Track decisions, measure results, and improve with AI feedback.</text>
+  <g font-family="Arial"><rect x="260" y="170" width="205" height="110" rx="14" fill="#111f31" stroke="#24364d"/><text x="282" y="201" fill="#8da1ba" font-size="14">NET P&amp;L</text><text x="282" y="246" fill="#34d399" font-size="32" font-weight="700">+$12,480</text>
+  <rect x="485" y="170" width="205" height="110" rx="14" fill="#111f31" stroke="#24364d"/><text x="507" y="201" fill="#8da1ba" font-size="14">WIN RATE</text><text x="507" y="246" fill="#f8fafc" font-size="32" font-weight="700">68.4%</text>
+  <rect x="710" y="170" width="205" height="110" rx="14" fill="#111f31" stroke="#24364d"/><text x="732" y="201" fill="#8da1ba" font-size="14">AVG. R / R</text><text x="732" y="246" fill="#f8fafc" font-size="32" font-weight="700">2.4</text>
+  <rect x="935" y="170" width="205" height="110" rx="14" fill="#111f31" stroke="#24364d"/><text x="957" y="201" fill="#8da1ba" font-size="14">OPEN TRADES</text><text x="957" y="246" fill="#f8fafc" font-size="32" font-weight="700">7</text></g>
+  <rect x="260" y="306" width="620" height="342" rx="16" fill="#0d1a2a" stroke="#24364d"/><text x="286" y="344" fill="#f8fafc" font-family="Arial" font-size="18" font-weight="700">Equity curve</text>
+  <g stroke="#223249"><path d="M290 392h560M290 455h560M290 518h560M290 581h560"/></g>
+  <path d="M290 576 C340 554 360 565 405 526 S480 509 520 470 S600 493 645 432 S725 436 760 382 S820 385 850 352" fill="none" stroke="url(#line)" stroke-width="6" stroke-linecap="round"/>
+  <path d="M290 576 C340 554 360 565 405 526 S480 509 520 470 S600 493 645 432 S725 436 760 382 S820 385 850 352 L850 620 L290 620Z" fill="#2563eb" opacity=".12"/>
+  <rect x="906" y="306" width="234" height="342" rx="16" fill="#0d1a2a" stroke="#24364d"/><text x="930" y="344" fill="#f8fafc" font-family="Arial" font-size="18" font-weight="700">AI Coach</text>
+  <rect x="930" y="370" width="186" height="142" rx="12" fill="#13243a"/><circle cx="953" cy="397" r="10" fill="#22d3ee"/><text x="973" y="402" fill="#dbeafe" font-family="Arial" font-size="14" font-weight="700">Trade insight</text><text x="948" y="435" fill="#9fb1c8" font-family="Arial" font-size="13">Your best setups appear</text><text x="948" y="458" fill="#9fb1c8" font-family="Arial" font-size="13">during the London session.</text><text x="948" y="481" fill="#9fb1c8" font-family="Arial" font-size="13">Keep risk below 1.2%.</text>
+  <rect x="930" y="532" width="186" height="50" rx="10" fill="#2563eb"/><text x="972" y="563" fill="white" font-family="Arial" font-size="14" font-weight="700">Review trades</text>
+</svg>
