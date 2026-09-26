@@ -322,5 +322,59 @@
     "process": "Priority grouping",
     "result": "Alert queue",
     "description": "A browser-local notification prototype with no outbound alerts."
+  },
+  {
+    "slug": "crm-operations-hub",
+    "title": "CRM Operations Hub",
+    "group": "Custom Software",
+    "input": "Lead and customer data",
+    "process": "Pipeline workflow",
+    "result": "Prioritized deals",
+    "description": "An interactive CRM pipeline with lead creation, stage movement and live metrics."
+  },
+  {
+    "slug": "academy-management-system",
+    "title": "Academy Management System",
+    "group": "Custom Software",
+    "input": "Student records",
+    "process": "Attendance and fee operations",
+    "result": "School overview",
+    "description": "An education operations dashboard with searchable students and attendance controls."
+  },
+  {
+    "slug": "saas-tenant-console",
+    "title": "SaaS Tenant Console",
+    "group": "Custom Software",
+    "input": "Workspace account",
+    "process": "Roles and usage management",
+    "result": "Tenant health",
+    "description": "A multi-tenant SaaS administration concept for users, roles, limits and plans."
+  },
+  {
+    "slug": "api-workbench",
+    "title": "REST API Workbench",
+    "group": "Custom Software",
+    "input": "Endpoint request",
+    "process": "Validation and response",
+    "result": "Reviewable JSON",
+    "description": "An interactive API console for testing common business endpoints and payloads."
+  },
+  {
+    "slug": "modernization-planner",
+    "title": "Modernization Planner",
+    "group": "Custom Software",
+    "input": "Legacy system risks",
+    "process": "Readiness assessment",
+    "result": "Migration roadmap",
+    "description": "A technical assessment and phased upgrade planner for legacy business software."
+  },
+  {
+    "slug": "automation-center",
+    "title": "Automation Center",
+    "group": "Custom Software",
+    "input": "Business event",
+    "process": "Rules and integration",
+    "result": "Execution log",
+    "description": "A workflow builder connecting CRM, ERP, communication and operational systems."
   }
 ]
