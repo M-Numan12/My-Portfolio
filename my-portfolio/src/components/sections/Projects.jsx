@@ -2,165 +2,33 @@ import { motion } from "framer-motion";
 import AiDemos from "./AiDemos";
 import WebDemos from "./WebDemos";
 
+const featured = [
+  { title: "AetherMetrics", subtitle: "Business analytics dashboard", image: "https://raw.githubusercontent.com/M-Numan12/AETHERMETRICS/main/preview.png", tags: ["JavaScript", "Analytics", "Responsive UI"], result: "Transforms fictional transaction data into searchable KPIs, channel insights and CSV exports.", link: "https://github.com/M-Numan12/AETHERMETRICS" },
+  { title: "AI Trade Journal", subtitle: "Full-stack SaaS concept", icon: "pi pi-chart-line", tags: ["Next.js", "PostgreSQL", "OpenAI API"], result: "Combines trade tracking, performance analytics and AI-assisted chart feedback in one workflow.", link: "https://github.com/M-Numan12/AI-Trade-Journal" },
+  { title: "Real-Time Bus Tracking", subtitle: "Android location experience", icon: "pi pi-map-marker", tags: ["Kotlin", "Google Maps", "GPS"], result: "Explores live route visibility, stop information and ETA updates for safer student transport.", link: "https://github.com/M-Numan12/Bus_Tracking_App" },
+  { title: "Web Services Lab", subtitle: "36 interactive business demos", icon: "pi pi-window-maximize", tags: ["Websites", "WordPress", "Lead generation"], result: "Shows working visitor journeys for company sites, booking, commerce and business applications.", link: "https://numan-web-service-projects.vercel.app/" },
+];
+
 export default function Projects() {
-  const projectsList = [
-    {
-      title: "AetherMetrics — Business Analytics Dashboard",
-      icon: "pi pi-chart-bar",
-      image: "https://raw.githubusercontent.com/M-Numan12/AETHERMETRICS/main/preview.png",
-      technologies: ["JavaScript", "HTML", "CSS", "Analytics"],
-      link: "https://github.com/M-Numan12/AETHERMETRICS",
-      details: [
-        "Interactive business dashboard with period filters and transaction search.",
-        "Calculated revenue, order and conversion metrics with channel breakdown.",
-        "CSV export and responsive interface using fictional demo data."
-      ]
-    },
-    {
-      title: "School Management System",
-      icon: "pi pi-building",
-      technologies: ["React", "Node.js", "Express", "PostgreSQL", "Sequelize"],
-      link: "https://github.com/M-Numan12",
-      details: [
-        "Automated administrative, academic, and financial operations.",
-        "Role-Based Access Control (Admin, Teachers, Staff, Students & Parents).",
-        "Student enrolment, automated fee trackers, and report card generators.",
-        "Multi-tenant architecture with secure subdomains."
-      ]
-    },
-    {
-      title: "PrimePrep",
-      icon: "pi pi-chart-line",
-      technologies: ["React.js", "Node.js", "Express.js", "PostgreSQL"],
-      link: "https://github.com/M-Numan12",
-      details: [
-        "Online exam preparation platform built with real-time timers.",
-        "Interactive test-taking system with instant scoreboard analytics.",
-        "Secure student dashboards tracking past exam metrics.",
-        "Robust user registration and state management."
-      ]
-    },
-    {
-      title: "Enterprise ERP System",
-      icon: "pi pi-desktop",
-      technologies: ["React.js", "Node.js", "Express.js", "PostgreSQL", "SASS"],
-      link: "https://github.com/M-Numan12",
-      details: [
-        "Comprehensive dashboard managing Inventory, Sales, and Finances.",
-        "Implemented strict multi-tenant role-based database isolation.",
-        "Generates dynamic monthly sales charts and auditing records.",
-        "Sequelize ORM for fast queries and solid transactional integrity."
-      ]
-    },
-    {
-      title: "Console ATM System",
-      icon: "pi pi-wallet",
-      technologies: ["Python", "CLI Design", "Object Oriented Programming"],
-      link: "https://github.com/M-Numan12",
-      details: [
-        "Robust command-line interface simulating real banking ATM models.",
-        "Implements secure PIN verification, withdrawals, deposits, and statements.",
-        "Written using advanced OOP methodologies, error-handling, and loops."
-      ]
-    },
-    {
-      title: "Real-Time Bus Tracking App",
-      icon: "pi pi-map-marker",
-      technologies: ["Kotlin", "Android SDK", "Google Maps API", "GPS Tracking"],
-      link: "https://github.com/M-Numan12/Bus_Tracking_App",
-      details: [
-        "A robust mobile application that tracks school or university buses in real time.",
-        "Integrated Google Maps API to render exact routes, stops, and dynamic arrival times (ETA).",
-        "Reduces student waiting times and enhances transit safety through precise live GPS coordinates.",
-        "Implemented secure background services for persistent location coordinates streaming."
-      ]
-    },
-    {
-      title: "NOVA AI - Voice Desktop Assistant",
-      icon: "pi pi-microphone",
-      technologies: ["Python", "Selenium", "Playwright", "Speech Recognition", "PyAutoGUI", "SQLite"],
-      link: "https://github.com/M-Numan12",
-      details: [
-        "Developed a Python-based voice-controlled desktop automation assistant.",
-        "Implemented speech recognition and voice response for hands-free system interaction.",
-        "Automated desktop tasks (app launching, file management) and browser navigation.",
-        "Designed modular architecture with system startup integration."
-      ]
-    },
-    {
-      title: "AI Trade Journal (SaaS Platform)",
-      icon: "pi pi-chart-bar",
-      technologies: ["Next.js", "Node.js", "PostgreSQL", "OpenAI API", "Socket.io", "Docker"],
-      link: "https://github.com/M-Numan12/AI-Trade-Journal",
-      details: [
-        "Developed a full-stack SaaS trading journal with AI-powered trade analysis and feedback.",
-        "Implemented screenshot uploads and chart analysis using OpenAI vision capabilities.",
-        "Designed interactive dashboards tracking win rate, risk-reward, and emotional psychology.",
-        "Built secure JWT authentication, real-time WebSocket notifications, and optimized PostgreSQL schema."
-      ]
-    }
-  ];
-
-  const cardVariants = {
-    hidden: { opacity: 0, y: 30 },
-    visible: (index) => ({
-      opacity: 1,
-      y: 0,
-      transition: {
-        delay: index * 0.15,
-        duration: 0.7,
-        type: "spring",
-        stiffness: 70,
-      },
-    }),
-  };
-
   return (
-    <section className="projects-section" id="projects">
-      <div className="section-header">
-        <h2>My Projects</h2>
-        <p>A selection of my recent full-stack development projects and software engineering solutions.</p>
+    <section className="projects-section professional-projects" id="projects">
+      <div className="section-heading-pro project-heading">
+        <div><p className="eyebrow">SELECTED WORK</p><h2>Projects that show the thinking, not just the technology.</h2></div>
+        <a href="https://github.com/M-Numan12" target="_blank" rel="noreferrer" className="text-link">All repositories <i className="pi pi-arrow-up-right" /></a>
       </div>
-
-      <div className="projects-grid">
-        {projectsList.map((project, index) => (
-          <motion.div
-            className="glass-card project-card"
-            key={index}
-            variants={cardVariants}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, margin: "-100px" }}
-            custom={index}
-          >
-            <div className="project-img-mock">
-              {project.image ? <img src={project.image} alt={`${project.title} visual preview`} style={{width: "100%", height: "100%", objectFit: "cover", objectPosition: "top"}} loading="lazy" /> : <i className={project.icon}></i>}
-              <div className="glow-overlay"></div>
-              <div className="project-tags">
-                {project.technologies.map((tech, idx) => (
-                  <span className="tag" key={idx}>{tech}</span>
-                ))}
-              </div>
+      <div className="featured-grid">
+        {featured.map((project, index) => (
+          <motion.article className="featured-project" key={project.title} initial={{ opacity: 0, y: 22 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: index * 0.07 }}>
+            <a className="featured-visual" href={project.link} target="_blank" rel="noreferrer">
+              {project.image ? <img src={project.image} alt={`${project.title} interface preview`} loading="lazy" /> : <i className={project.icon} />}
+              <span className="project-index">0{index + 1}</span>
+            </a>
+            <div className="featured-copy">
+              <span>{project.subtitle}</span><h3>{project.title}</h3><p>{project.result}</p>
+              <div className="project-pills">{project.tags.map((tag) => <span key={tag}>{tag}</span>)}</div>
+              <a href={project.link} target="_blank" rel="noreferrer" className="text-link">View project <i className="pi pi-arrow-up-right" /></a>
             </div>
-
-            <div className="project-info">
-              <h3>{project.title}</h3>
-              <ul className="project-details">
-                {project.details.map((detail, idx) => (
-                  <li key={idx}>{detail}</li>
-                ))}
-              </ul>
-              <a
-                href={project.link}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="btn-secondary"
-                style={{ display: "inline-block", textDecoration: "none", padding: "8px 20px", fontSize: "14px" }}
-              >
-                View Project <i className="pi pi-external-link"></i>
-              </a>
-            </div>
-          </motion.div>
+          </motion.article>
         ))}
       </div>
       <AiDemos />
