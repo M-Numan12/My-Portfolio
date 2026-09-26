@@ -1,88 +1,42 @@
 import { motion } from "framer-motion";
 
 export default function Hero() {
-  const scrollToSection = (id) => {
-    document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
-  };
-
-  const containerVariants = {
-    hidden: { opacity: 0 },
-    visible: {
-      opacity: 1,
-      transition: {
-        staggerChildren: 0.15,
-        delayChildren: 0.2,
-      },
-    },
-  };
-
-  const itemVariants = {
-    hidden: { opacity: 0, y: 30 },
-    visible: { opacity: 1, y: 0, transition: { type: "spring", stiffness: 100 } },
-  };
+  const scrollToSection = (id) => document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
 
   return (
-    <section className="hero" id="home">
-      <motion.div
-        className="hero-left"
-        variants={containerVariants}
-        initial="hidden"
-        animate="visible"
-      >
-        <motion.span className="welcome-tag" variants={itemVariants}>
-          Welcome to my portfolio
-        </motion.span>
-
-        <motion.h1 variants={itemVariants}>
-          Hi, I'm <span>Muhammad Numan</span>
-        </motion.h1>
-
-        <motion.h3 variants={itemVariants}>
-          Full-Stack Web Developer & Software Engineer
-        </motion.h3>
-
-        <motion.p className="hero-desc" variants={itemVariants}>
-          I design and build highly performant ERP systems, POS solutions, and modern web applications with secure backend architectures, robust database schemas, and stunning user interfaces.
-        </motion.p>
-
-        <motion.div className="hero-buttons" variants={itemVariants}>
-          <button className="btn-primary" onClick={() => scrollToSection("contact")}>
-            Hire Me <i className="pi pi-briefcase"></i>
-          </button>
-          <button className="btn-secondary" onClick={() => scrollToSection("projects")}>
-            See My Works <i className="pi pi-arrow-right"></i>
-          </button>
-        </motion.div>
-
-        <motion.div className="social-container" variants={itemVariants}>
-          <span>Connect:</span>
-          <div className="social-links">
-            <a href="https://github.com/M-Numan12" target="_blank" rel="noopener noreferrer" title="GitHub">
-              <i className="pi pi-github"></i>
-            </a>
-            <a href="https://www.linkedin.com/in/muhammad-numan-8656b1406/" target="_blank" rel="noopener noreferrer" title="LinkedIn">
-              <i className="pi pi-linkedin"></i>
-            </a>
-            <a href="mailto:Numannaeem134@gmail.com" title="Email">
-              <i className="pi pi-envelope"></i>
-            </a>
-            <a href="tel:+923259773687" title="Phone">
-              <i className="pi pi-phone"></i>
-            </a>
-          </div>
-        </motion.div>
+    <section className="hero professional-hero" id="home">
+      <motion.div className="hero-left" initial={{ opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.65 }}>
+        <div className="availability-pill"><span /> Available for remote projects</div>
+        <p className="eyebrow">FULL-STACK DEVELOPMENT · AI AUTOMATION</p>
+        <h1>I build digital products that solve <span>real business problems.</span></h1>
+        <h3>Muhammad Numan — Full-Stack Developer</h3>
+        <p className="hero-desc">
+          From conversion-focused websites to custom ERP platforms and AI-assisted workflows, I turn business requirements into secure, responsive software that teams can actually use.
+        </p>
+        <div className="hero-buttons">
+          <button className="btn-primary" onClick={() => scrollToSection("projects")}>View live work <i className="pi pi-arrow-right" /></button>
+          <button className="btn-secondary" onClick={() => scrollToSection("contact")}>Discuss a project</button>
+        </div>
+        <div className="hero-proof" aria-label="Portfolio highlights">
+          <div><strong>60+</strong><span>interactive demos</span></div>
+          <div><strong>Full cycle</strong><span>frontend to deployment</span></div>
+          <div><strong>Remote</strong><span>worldwide collaboration</span></div>
+        </div>
+        <div className="social-links hero-socials">
+          <a href="https://github.com/M-Numan12" target="_blank" rel="noreferrer" aria-label="GitHub"><i className="pi pi-github" /></a>
+          <a href="https://www.linkedin.com/in/muhammad-numan-8656b1406/" target="_blank" rel="noreferrer" aria-label="LinkedIn"><i className="pi pi-linkedin" /></a>
+          <a href="mailto:Numannaeem134@gmail.com" aria-label="Email"><i className="pi pi-envelope" /></a>
+        </div>
       </motion.div>
 
-      <motion.div
-        className="hero-right"
-        initial={{ opacity: 0, scale: 0.8 }}
-        animate={{ opacity: 1, scale: 1 }}
-        transition={{ duration: 1, type: "spring", bounce: 0.25 }}
-      >
-        <div className="image-wrapper">
-          <img src="/assets/images/profile.png" alt="Muhammad Numan" />
+      <motion.div className="hero-right professional-portrait" initial={{ opacity: 0, scale: 0.94 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.8 }}>
+        <div className="portrait-frame">
+          <img src="/assets/images/profile.png" alt="Muhammad Numan, full-stack developer" />
+          <div className="portrait-card">
+            <span>Currently building</span>
+            <strong>Web apps · AI workflows · Business systems</strong>
+          </div>
         </div>
-        <div className="glow-ring"></div>
       </motion.div>
     </section>
   );
