@@ -4,10 +4,10 @@ import "./WebDemos.css";
 
 const collection = "https://github.com/M-Numan12/numan-web-service-projects";
 const liveCollection = "https://numan-web-service-projects.vercel.app";
-const categories = ["All", "Business Websites", "WordPress", "Commerce & Booking", "Custom Web Apps", "Website Improvement", "Lead Generation"];
+const categories = ["All", "Business Websites", "WordPress", "Commerce & Booking", "Custom Software", "Custom Web Apps", "Website Improvement", "Lead Generation"];
 const featured = new Set([
   "corporate-company-site", "wordpress-business-concept", "woocommerce-store-concept",
-  "admin-content-console", "accessibility-review-demo", "smart-contact-form",
+  "admin-content-console", "crm-operations-hub", "accessibility-review-demo", "smart-contact-form",
 ]);
 
 export default function WebDemos() {
@@ -22,7 +22,7 @@ export default function WebDemos() {
         <div>
           <span className="web-kicker">Websites · WordPress · Commerce · Applications</span>
           <h3>Websites Built to Inform, Convert, and Grow</h3>
-          <p>36 standalone browser concepts. See the visitor journey, try an interaction, and inspect the source. Each preview illustrates the workflow; production services need proper integrations.</p>
+          <p>42 standalone browser concepts. See the visitor journey, try an interaction, and inspect the source. Each preview illustrates the workflow; production services need proper integrations.</p>
         </div>
         <a href={collection} className="web-all-code" target="_blank" rel="noopener noreferrer">Explore the collection ↗</a>
       </div>
@@ -65,7 +65,7 @@ export default function WebDemos() {
       </div>
 
       {active === "All" && <button className="web-more" type="button" onClick={() => setExpanded((value) => !value)}
-        aria-expanded={expanded}>{expanded ? "Show featured projects" : "Show all 36 projects"}</button>}
+        aria-expanded={expanded}>{expanded ? "Show featured projects" : "Show all 42 projects"}</button>}
     </div>
   );
 }
