@@ -22,5 +22,7 @@
 .ai-flow strong { color: #e5e8ef; font-size: 13px; font-weight: 500; line-height: 1.4; }
 .ai-scope-note { margin: 1px 0 13px; color: #a8b4c9; font-size: 12px; line-height: 1.5; }
 .ai-code-link { display: inline-flex; align-items: center; justify-content: space-between; gap: 16px; margin-top: auto; padding-top: 16px; color: var(--color-primary); font-size: 13px; font-weight: 750; border-top: 1px solid rgba(255,255,255,.08); }
+.ai-more { margin: 28px auto 0; display: flex; align-items: center; gap: 10px; padding: 12px 18px; border-radius: 999px; border: 1px solid rgba(250,204,21,.3); color: #facc15; background: rgba(250,204,21,.06); font-weight: 700; cursor: pointer; }
+.ai-more:hover { background: rgba(250,204,21,.12); }
 @media (max-width: 1100px) { .ai-demo-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 @media (max-width: 680px) { .ai-showcase { margin-top: 60px; } .ai-showcase-heading { display: block; } .ai-collection-link { display: inline-block; margin-top: 18px; } .ai-demo-grid { grid-template-columns: 1fr; } .ai-filters { flex-wrap: nowrap; overflow-x: auto; padding-bottom: 8px; } .ai-filters button { flex: 0 0 auto; } }
