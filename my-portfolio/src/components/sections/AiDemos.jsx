@@ -40,7 +40,10 @@ const integrationNotes = {
 
 export default function AiDemos() {
   const [active, setActive] = useState("All");
+  const [expanded, setExpanded] = useState(false);
   const filtered = projects.filter((item) => active === "All" || item[2] === active);
+  const featuredSlugs = ["lead-scout", "support-triage", "web-help-chat", "lead-router", "document-search", "operations-dashboard"];
+  const visible = active === "All" && !expanded ? filtered.filter((item) => featuredSlugs.includes(item[0])) : filtered;
 
   return (
     <div className="ai-showcase" aria-label="AI service projects">
@@ -61,7 +64,7 @@ export default function AiDemos() {
       </div>
 
       <div className="ai-demo-grid">
-        {filtered.map(([slug, title, group, input, process, result, label, separateLink]) => (
+        {visible.map(([slug, title, group, input, process, result, label, separateLink]) => (
           <article className="ai-demo-card" key={slug}>
             <a className="ai-preview" href={separateLink || `${collection}/tree/main/${slug}`}
               target="_blank" rel="noopener noreferrer" aria-label={`View ${title} source code`}>
@@ -84,6 +87,12 @@ export default function AiDemos() {
           </article>
         ))}
       </div>
+      {active === "All" && (
+        <button type="button" className="ai-more" onClick={() => setExpanded((value) => !value)} aria-expanded={expanded}>
+          {expanded ? "Show featured projects" : "Show all 24 AI projects"}
+          <i className={`pi ${expanded ? "pi-chevron-up" : "pi-chevron-down"}`} />
+        </button>
+      )}
     </div>
   );
 }
