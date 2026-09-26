@@ -16,7 +16,7 @@ export default function Navbar() {
 
   const start = (
     <button className="brand-lockup" onClick={() => scrollToSection("home")} aria-label="Go to homepage">
-      <span className="brand-mark">MN</span>
+      <span className="brand-mark"><img src="/mn-brand-icon.png" alt="" /></span>
       <span>Muhammad Numan</span>
     </button>
   );

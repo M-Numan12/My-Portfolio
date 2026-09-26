@@ -13,7 +13,9 @@ section { scroll-margin-top: 76px; }
 .navbar-container { backdrop-filter: blur(18px); background: rgba(5,7,15,.82); border-bottom: 1px solid rgba(255,255,255,.06); }
 .navbar-wrapper .p-menubar { min-height: 70px; }
 .brand-lockup { appearance: none; display: inline-flex; align-items: center; gap: 10px; background: none; border: 0; color: #fff; font: inherit; font-weight: 750; cursor: pointer; }
-.brand-mark { display: grid; place-items: center; width: 36px; height: 36px; color: #070a12; background: var(--color-primary); border-radius: 10px; font-size: 13px; box-shadow: 0 0 24px rgba(250,204,21,.24); }
+.brand-mark { display: grid; place-items: center; width: 42px; height: 42px; border-radius: 12px; overflow: hidden; background: #071126; box-shadow: 0 0 0 1px rgba(34,211,238,.24), 0 0 26px rgba(37,99,235,.28); }
+.brand-mark img { display: block; width: 100%; height: 100%; object-fit: contain; transform: scale(1.08); transition: transform .22s ease, filter .22s ease; }
+.brand-lockup:hover .brand-mark img { transform: scale(1.16); filter: brightness(1.08); }
 .nav-cta { padding: 10px 16px !important; font-size: 13px !important; }
 
 .professional-hero { min-height: calc(100vh - 72px); padding-top: 76px; grid-template-columns: minmax(0,1.18fr) minmax(320px,.82fr); gap: clamp(40px,7vw,100px); position: relative; }
