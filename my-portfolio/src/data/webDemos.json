@@ -376,5 +376,59 @@
     "process": "Rules and integration",
     "result": "Execution log",
     "description": "A workflow builder connecting CRM, ERP, communication and operational systems."
+  },
+  {
+    "slug": "marketplace-mobile",
+    "title": "Mobile Marketplace",
+    "group": "Mobile Applications",
+    "input": "Product discovery",
+    "process": "Cart calculation",
+    "result": "Checkout summary",
+    "description": "A customer-facing marketplace with category browsing and live basket totals."
+  },
+  {
+    "slug": "appointment-mobile",
+    "title": "Appointment Booking App",
+    "group": "Mobile Applications",
+    "input": "Preferred date and time",
+    "process": "Availability selection",
+    "result": "Booking confirmation",
+    "description": "A clear mobile booking flow for clinics, salons and service businesses."
+  },
+  {
+    "slug": "learning-mobile",
+    "title": "Mobile Learning App",
+    "group": "Mobile Applications",
+    "input": "Course progress",
+    "process": "Lessons and quiz feedback",
+    "result": "Learning completion",
+    "description": "A mobile education experience with progress, lessons and a working quiz."
+  },
+  {
+    "slug": "field-service-mobile",
+    "title": "Field Service App",
+    "group": "Mobile Applications",
+    "input": "Daily job route",
+    "process": "Job status workflow",
+    "result": "Synced completion",
+    "description": "An internal staff app for routes, customer visits and completion updates."
+  },
+  {
+    "slug": "workforce-attendance-mobile",
+    "title": "Workforce Attendance",
+    "group": "Mobile Applications",
+    "input": "Employee shift",
+    "process": "Clock-in and time tracking",
+    "result": "Attendance record",
+    "description": "A mobile workforce app with shift status and weekly attendance history."
+  },
+  {
+    "slug": "delivery-tracking-mobile",
+    "title": "Delivery Tracking App",
+    "group": "Mobile Applications",
+    "input": "Order location",
+    "process": "Live route progress",
+    "result": "Delivery confirmation",
+    "description": "A customer tracking experience with ETA, driver details and delivery stages."
   }
 ]
