@@ -6,7 +6,7 @@ const featured = [
   { title: "AetherMetrics", subtitle: "Business analytics dashboard", image: "https://raw.githubusercontent.com/M-Numan12/AETHERMETRICS/main/preview.png", tags: ["JavaScript", "Analytics", "Responsive UI"], result: "Transforms fictional transaction data into searchable KPIs, channel insights and CSV exports.", link: "https://github.com/M-Numan12/AETHERMETRICS" },
   { title: "AI Trade Journal", subtitle: "Full-stack SaaS concept", icon: "pi pi-chart-line", tags: ["Next.js", "PostgreSQL", "OpenAI API"], result: "Combines trade tracking, performance analytics and AI-assisted chart feedback in one workflow.", link: "https://github.com/M-Numan12/AI-Trade-Journal" },
   { title: "Real-Time Bus Tracking", subtitle: "Android location experience", icon: "pi pi-map-marker", tags: ["Kotlin", "Google Maps", "GPS"], result: "Explores live route visibility, stop information and ETA updates for safer student transport.", link: "https://github.com/M-Numan12/Bus_Tracking_App" },
-  { title: "Web Services Lab", subtitle: "42 interactive business demos", icon: "pi pi-window-maximize", tags: ["Websites", "WordPress", "Lead generation"], result: "Shows working visitor journeys for company sites, booking, commerce and business applications.", link: "https://numan-web-service-projects.vercel.app/" },
+  { title: "Web Services Lab", subtitle: "48 interactive business demos", icon: "pi pi-window-maximize", tags: ["Websites", "WordPress", "Lead generation"], result: "Shows working visitor journeys for company sites, booking, commerce and business applications.", link: "https://numan-web-service-projects.vercel.app/" },
 ];
 
 export default function Projects() {
