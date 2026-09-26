@@ -1,50 +1,27 @@
 import { motion } from "framer-motion";
 
+const groups = [
+  { title: "Frontend", tools: ["React", "Next.js", "JavaScript", "HTML", "CSS / Sass", "Tailwind"] },
+  { title: "Backend", tools: ["Node.js", "Express", "REST APIs", "WebSockets", "JWT / RBAC", "Python"] },
+  { title: "Data", tools: ["PostgreSQL", "MySQL", "MongoDB", "Sequelize", "Data modeling"] },
+  { title: "Delivery", tools: ["Git & GitHub", "Docker", "Vercel", "Testing", "Performance", "Responsive QA"] },
+  { title: "AI & Automation", tools: ["OpenAI API", "Prompt workflows", "Document search", "Lead routing", "Reporting"] },
+];
+
 export default function TechStack() {
-  const skills = [
-    { name: "React.js & Next.js (MERN/SaaS)", percentage: 90 },
-    { name: "Node.js & Express.js (REST/WebSockets)", percentage: 85 },
-    { name: "PostgreSQL, MySQL & MongoDB", percentage: 80 },
-    { name: "JavaScript (ES6+) & Python Automation", percentage: 85 },
-    { name: "HTML5, CSS3, Tailwind CSS & SASS", percentage: 95 },
-    { name: "AI Integration (OpenAI API) & Docker", percentage: 75 },
-  ];
-
   return (
-    <section className="skills-section" id="skills">
-      <motion.div
-        className="skills-left"
-        initial={{ opacity: 0, x: -50 }}
-        whileInView={{ opacity: 1, x: 0 }}
-        viewport={{ once: true, margin: "-100px" }}
-        transition={{ duration: 0.8 }}
-      >
-        <h2>My Technical Skills</h2>
-        <p>
-          I have spent years mastering web development, backend engineering, and database management. My technical stack is focused on creating efficient, reliable, and highly scalable digital products.
-        </p>
-        <p>
-          I am highly proficient in frontend single-page applications (SPAs) with React, robust server-side routing with Express.js, and complex SQL/NoSQL database configurations. I write clean, modular, and reusable code with a deep focus on speed, performance, and responsive design systems.
-        </p>
-      </motion.div>
-
-      <div className="skills-right">
-        {skills.map((skill, index) => (
-          <div className="skill-bar-container" key={index}>
-            <div className="skill-info">
-              <span className="skill-name">{skill.name}</span>
-              <span className="skill-percentage">{skill.percentage}%</span>
-            </div>
-            <div className="skill-track">
-              <motion.div
-                className="skill-progress"
-                initial={{ width: "0%" }}
-                whileInView={{ width: `${skill.percentage}%` }}
-                viewport={{ once: true }}
-                transition={{ duration: 1.2, ease: "easeOut", delay: index * 0.1 }}
-              ></motion.div>
-            </div>
-          </div>
+    <section className="skills-section professional-stack" id="skills">
+      <div className="section-heading-pro">
+        <p className="eyebrow">TECHNOLOGY</p>
+        <h2>A practical stack selected for the product.</h2>
+        <p>I choose tools around reliability, maintainability and business value—not trends or inflated percentage scores.</p>
+      </div>
+      <div className="stack-grid">
+        {groups.map((group, index) => (
+          <motion.article key={group.title} className="stack-group" initial={{ opacity: 0, y: 18 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: index * 0.06 }}>
+            <h3>{group.title}</h3>
+            <div>{group.tools.map((tool) => <span key={tool}>{tool}</span>)}</div>
+          </motion.article>
         ))}
       </div>
     </section>
