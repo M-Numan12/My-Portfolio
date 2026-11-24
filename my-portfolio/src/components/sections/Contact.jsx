@@ -4,6 +4,30 @@ import { motion } from "framer-motion";
 const CONTACT_EMAIL = "mrnuman.naeem@gmail.com";
 const FORMSUBMIT_URL = `https://formsubmit.co/ajax/${CONTACT_EMAIL}`;
 
+const channels = [
+  {
+    icon: "pi pi-envelope",
+    label: "Direct Email",
+    value: CONTACT_EMAIL,
+    href: `mailto:${CONTACT_EMAIL}`,
+    external: false,
+  },
+  {
+    icon: "pi pi-linkedin",
+    label: "LinkedIn",
+    value: "Muhammad Numan",
+    href: "https://www.linkedin.com/in/muhammad-numan-8656b1406/",
+    external: true,
+  },
+  {
+    icon: "pi pi-github",
+    label: "GitHub",
+    value: "github.com/M-Numan12",
+    href: "https://github.com/M-Numan12",
+    external: true,
+  },
+];
+
 export default function Contact() {
   const [formData, setFormData] = useState({ name: "", email: "", subject: "", message: "" });
   const [status, setStatus] = useState({ type: "idle", text: "" });
@@ -57,22 +81,76 @@ export default function Contact() {
   return (
     <section className="contact-section professional-contact" id="contact">
       <div className="contact-intro">
-        <p className="eyebrow">LET'S BUILD SOMETHING USEFUL</p>
-        <h2>Have a project or business problem in mind?</h2>
-        <p>Share the goal, the current challenge and your preferred timeline. I’ll help you identify a sensible technical next step.</p>
+        <p className="eyebrow">START A CONVERSATION</p>
+        <h2>Have a project or technical challenge in mind?</h2>
+        <p>
+          Share your goals, current bottlenecks, and ideal timeline. I’ll review your requirements
+          and reply with a clear, practical technical next step.
+        </p>
+
+        <div className="response-note">
+          <i className="pi pi-clock" aria-hidden="true" />
+          Typical response time: under 24 hours
+        </div>
+
         <div className="direct-links">
-          <a href={`mailto:${CONTACT_EMAIL}`}><i className="pi pi-envelope" /> {CONTACT_EMAIL}</a>
-          <a href="https://www.linkedin.com/in/muhammad-numan-8656b1406/" target="_blank" rel="noreferrer"><i className="pi pi-linkedin" /> LinkedIn</a>
-          <a href="https://github.com/M-Numan12" target="_blank" rel="noreferrer"><i className="pi pi-github" /> GitHub</a>
+          {channels.map(({ icon, label, value, href, external }) => (
+            <a
+              key={label}
+              href={href}
+              className="direct-link-card"
+              target={external ? "_blank" : undefined}
+              rel={external ? "noreferrer" : undefined}
+            >
+              <div className="direct-link-main">
+                <span className="direct-link-icon" aria-hidden="true">
+                  <i className={icon} />
+                </span>
+                <span className="direct-link-meta">
+                  <small>{label}</small>
+                  <strong>{value}</strong>
+                </span>
+              </div>
+              <i className="pi pi-arrow-up-right direct-link-arrow" aria-hidden="true" />
+            </a>
+          ))}
         </div>
       </div>
-      <motion.form className="contact-form-pro" onSubmit={handleSubmit} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
+
+      <motion.form
+        className="contact-form-pro"
+        onSubmit={handleSubmit}
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+      >
         <div className="form-row">
-          <label>Name<input name="name" value={formData.name} onChange={handleChange} required placeholder="Your name" /></label>
-          <label>Email<input type="email" name="email" value={formData.email} onChange={handleChange} required placeholder="you@company.com" /></label>
+          <label>
+            Name
+            <input name="name" value={formData.name} onChange={handleChange} required placeholder="Your name" />
+          </label>
+          <label>
+            Email
+            <input type="email" name="email" value={formData.email} onChange={handleChange} required placeholder="you@company.com" />
+          </label>
         </div>
-        <label>Subject<input name="subject" value={formData.subject} onChange={handleChange} placeholder="Website, app, automation..." /></label>
-        <label>Project details<textarea name="message" value={formData.message} onChange={handleChange} required rows="6" placeholder="What are you building, and what does success look like?" /></label>
+
+        <label>
+          Subject
+          <input name="subject" value={formData.subject} onChange={handleChange} placeholder="Web app, ERP system, AI workflow..." />
+        </label>
+
+        <label>
+          Project details
+          <textarea
+            name="message"
+            value={formData.message}
+            onChange={handleChange}
+            required
+            rows="6"
+            placeholder="What are you building, and what does a successful launch look like?"
+          />
+        </label>
 
         {status.type === "success" && (
           <div className="contact-status contact-status-success" role="status">
@@ -84,19 +162,25 @@ export default function Contact() {
           <div className="contact-status contact-status-error" role="alert">
             <span>{status.text}</span>
             {status.fallbackHref && (
-              <a href={status.fallbackHref} className="text-link">Open email app <i className="pi pi-arrow-up-right" /></a>
+              <a href={status.fallbackHref} className="text-link">
+                Open email app <i className="pi pi-arrow-up-right" />
+              </a>
             )}
           </div>
         )}
 
         <button className="btn-primary" type="submit" disabled={status.type === "submitting"}>
           {status.type === "submitting" ? (
-            <>Sending... <i className="pi pi-spin pi-spinner" /></>
+            <>
+              Sending... <i className="pi pi-spin pi-spinner" />
+            </>
           ) : (
-            <>Send message <i className="pi pi-send" /></>
+            <>
+              Send message <i className="pi pi-send" />
+            </>
           )}
         </button>
-        <small>Your query will be sent directly to {CONTACT_EMAIL}.</small>
+        <small>Queries are delivered directly to {CONTACT_EMAIL}.</small>
       </motion.form>
     </section>
   );

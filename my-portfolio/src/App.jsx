@@ -25,17 +25,24 @@ function App() {
       </main>
 
       <footer className="footer professional-footer">
-        <div>
-          <strong>Muhammad Numan</strong>
-          <p>Full-stack development and practical AI automation.</p>
+        <div className="footer-brand">
+          <img src="/mn-brand-icon.png" alt="MN Logo" />
+          <div>
+            <strong>Muhammad Numan</strong>
+            <p>Full-stack software engineering &amp; practical AI automation.</p>
+          </div>
         </div>
         <div className="footer-links">
           <a href="#services">Services</a>
           <a href="#projects">Work</a>
           <a href="#process">Process</a>
+          <a href="#skills">Stack</a>
+          <a href="#about">About</a>
           <a href="#contact">Contact</a>
         </div>
-        <p>© {new Date().getFullYear()} Muhammad Numan</p>
+        <div className="footer-meta">
+          <p>© {new Date().getFullYear()} Muhammad Numan</p>
+        </div>
       </footer>
     </>
   );
