@@ -25,7 +25,7 @@ export default function Hero() {
         <div className="social-links hero-socials">
           <a href="https://github.com/M-Numan12" target="_blank" rel="noreferrer" aria-label="GitHub"><i className="pi pi-github" /></a>
           <a href="https://www.linkedin.com/in/muhammad-numan-8656b1406/" target="_blank" rel="noreferrer" aria-label="LinkedIn"><i className="pi pi-linkedin" /></a>
-          <a href="mailto:Numannaeem134@gmail.com" aria-label="Email"><i className="pi pi-envelope" /></a>
+          <a href="mailto:mrnuman.naeem@gmail.com" aria-label="Email"><i className="pi pi-envelope" /></a>
         </div>
       </motion.div>
 
